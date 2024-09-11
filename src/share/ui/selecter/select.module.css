@@ -1,0 +1,17 @@
+.container {
+  width: 180px;
+  background-color: white;
+  padding: 11px 14px;
+  border-radius: 25px;
+}
+
+.select_visible_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select_visible_container > p {
+  font-family: var(--montserrat-font);
+  font-size: 16px;
+}

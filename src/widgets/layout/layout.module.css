@@ -1,0 +1,80 @@
+@import "../../global.css";
+
+.layout_container {
+  background-color: white;
+  width: 240px;
+  height: 740px;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  border-radius: var(--input-border-radius);
+  padding: 21px 35px 16px;
+}
+
+.layout_container form {
+  margin-top: 37px;
+  margin-bottom: 8px;
+  width: 208px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 17px;
+  background-color: var(--light-gray);
+}
+
+.layout_container form input {
+  background-color: transparent;
+  border: none;
+}
+
+.layout_container form input::placeholder {
+  font-family: var(--montserrat-font);
+  font-size: 16px;
+}
+
+.layout_container nav {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 178px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f2f4f6;
+}
+
+.layout_container nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--basic-color);
+}
+
+.layout_container nav > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.exit {
+  cursor: pointer;
+  border: 1px solid var(--basic-yellow);
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  width: 210px;
+  background-color: transparent;
+  border-radius: 8px;
+  gap: 18px;
+  color: var(--basic-yellow);
+  padding: 10px 16px;
+
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.exit a {
+  font-family: var(--montserrat-font);
+  color: var(--basic-yellow);
+  text-decoration: none;
+  font-size: 16px;
+}

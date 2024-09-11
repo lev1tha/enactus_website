@@ -1,0 +1,41 @@
+.container_home_page {
+  background-color: white;
+  border-radius: 26px;
+  padding: 52px 33px;
+  width: 100%;
+}
+
+.title_inner {
+  text-align: center;
+}
+
+.title_inner h1 {
+  font-family: var(--montserrat-font);
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.title_inner p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--montserrat-font);
+}
+
+.search_param {
+  display: flex;
+  align-items: center;
+
+  background-color: var(--basic-gray);
+  border-radius: var(--input-border-radius);
+  padding: 16px;
+}
+
+.search_param input {
+  width: 48%;
+
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  padding: 9px 20px;
+}

@@ -1,0 +1,17 @@
+.app_container {
+  width: 1440px;
+  max-width: 100%;
+  padding: 20px 35px;
+}
+
+.inner {
+  display: flex;
+  gap: 35px;
+}
+
+@media (min-width: 1440px) {
+  .main_container {
+    display: flex;
+    justify-content: center;
+  }
+}

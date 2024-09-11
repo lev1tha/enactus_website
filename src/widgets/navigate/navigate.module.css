@@ -1,0 +1,52 @@
+@import "../../global.css";
+
+.navigation_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--light-blue);
+  border-radius: var(--input-border-radius);
+  padding: 12px 8px;
+  margin-bottom: 73px;
+
+  position: relative;
+  z-index: 100;
+}
+
+.logo_navigation {
+  margin-left: 34px;
+  transition: 0.8s ease-in-out;
+}
+
+.logo_navigate_active {
+  transform: translateX(40vw);
+  transition: 0.8s ease-in-out;
+}
+
+.navigation_list {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.navigation_list a {
+  text-decoration: none;
+  font-family: var(--montserrat-font);
+  font-size: 18px;
+  color: white;
+}
+
+.button_call {
+  background-color: var(--basic-yellow);
+  padding: 12px 35px 11px;
+  border-radius: var(--input-border-radius);
+  color: white;
+  font-size: 20px;
+}
+
+/* Burger Navigate */
+
+.menu {
+  margin-right: 20px;
+}
