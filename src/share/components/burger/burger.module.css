@@ -9,6 +9,7 @@
   pointer-events: none;
 
   padding: 0 32px;
+  z-index: 10;
 }
 
 .burger_inner {

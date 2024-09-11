@@ -3,6 +3,8 @@
   background-color: white;
   padding: 11px 14px;
   border-radius: 25px;
+  position: relative;
+  /* z-index: -1; */
 }
 
 .select_visible_container {
@@ -14,4 +16,17 @@
 .select_visible_container > p {
   font-family: var(--montserrat-font);
   font-size: 16px;
+}
+
+.container_option {
+  margin-top: 10px;
+  padding: 8px 10px;
+  background-color: white;
+  border-radius: 16px;
+  position: absolute;
+  /* z-index: -1; */
+  width: 100%;
+  margin-top: 18px;
+  left: 0px;
+  box-shadow: 0px 15px 30px -23px black;
 }

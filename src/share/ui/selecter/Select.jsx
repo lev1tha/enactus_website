@@ -1,13 +1,29 @@
 import { useState, useEffect } from "react";
 import style from "./select.module.css";
 
-export default function Select() {
+export default function Select({ initialValue, cityData, setDataCity }) {
   const [showOption, setShowOption] = useState(false);
-  const [defaultValueSelector, setDefaultValueSelector] = useState("Город");
-  const [dataCity, setDataCity] = useState({});
+  const [defaultValueSelector, setDefaultValueSelector] =
+    useState(initialValue);
+  const cities = [
+    "Ош",
+    "Баткен",
+    "Джалал-абад",
+    "Бишкек",
+    "Чуй",
+    "Талас",
+    "Ыссык-Куль",
+    "Нарын",
+  ];
 
   const handleShowOption = () => {
     setShowOption((prev) => !prev);
+  };
+
+  const handleSelectCity = (city) => {
+    setDefaultValueSelector(city);
+    setDataCity(city);
+    setShowOption(false);
   };
 
   useEffect(() => {}, [showOption]);
@@ -26,8 +42,12 @@ export default function Select() {
         </div>
       </div>
       {showOption && (
-        <div>
-          <div></div>
+        <div className={style.container_option}>
+          {cities.map((city, index) => (
+            <div key={index} onClick={() => handleSelectCity(city)}>
+              {city}
+            </div>
+          ))}
         </div>
       )}
     </div>
