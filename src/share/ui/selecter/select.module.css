@@ -18,6 +18,16 @@
   font-size: 16px;
 }
 
+.modalNoActive {
+  transform: rotate(0);
+  transition: all 0.6s ease-in-out;
+}
+
+.modalActive {
+  transform: rotate(0.5turn);
+  transition: all 0.6s ease-in-out;
+}
+
 .container_option {
   margin-top: 10px;
   padding: 8px 10px;
@@ -29,4 +39,13 @@
   margin-top: 18px;
   left: 0px;
   box-shadow: 0px 15px 30px -23px black;
+}
+
+.city_option {
+  padding: 8px 8px;
+  border-radius: 12px;
+}
+
+.city_option:hover {
+  background-color: var(--basic-gray);
 }
