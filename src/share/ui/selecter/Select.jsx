@@ -37,14 +37,18 @@ export default function Select({ initialValue, cityData, setDataCity }) {
         <>
           <p>{defaultValueSelector}</p>
         </>
-        <div>
+        <div className={showOption ? style.modalActive : style.modalNoActive}>
           <img src="/assets/svg/artwork.svg" alt="" />
         </div>
       </div>
       {showOption && (
         <div className={style.container_option}>
           {cities.map((city, index) => (
-            <div key={index} onClick={() => handleSelectCity(city)}>
+            <div
+              className={style.city_option}
+              key={index}
+              onClick={() => handleSelectCity(city)}
+            >
               {city}
             </div>
           ))}

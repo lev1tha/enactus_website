@@ -25,10 +25,23 @@
 .search_param {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   background-color: var(--basic-gray);
   border-radius: var(--input-border-radius);
   padding: 16px;
+}
+
+.button_search {
+  background-color: var(--basic-yellow);
+  padding: 10px;
+  width: 174px;
+  color: white;
+  font-family: var(--montserrat-font);
+  font-size: 15px;
+  font-weight: medium;
+  border-radius: 16px;
+  border: none;
 }
 
 .search_form {
@@ -38,10 +51,16 @@
 }
 
 .search_form input {
-  width: 48%;
+  width: 25vw;
 
   font-size: 16px;
   border: none;
   border-radius: 25px;
   padding: 9px 20px;
+}
+
+.university_list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }

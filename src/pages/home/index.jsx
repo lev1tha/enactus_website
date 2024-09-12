@@ -58,10 +58,10 @@ export default function Home() {
             setDataCity={setDataCity}
           />
         </div>
-        <button>Поиск</button>
+        <button className={style.button_search}>Поиск</button>
       </div>
 
-      <div className="university_list">
+      <div className={style.university_list}>
         {filteredUniversities.map((university, index) => (
           <UniversityCart key={index} university={university} />
         ))}
