@@ -60,7 +60,9 @@
 }
 
 .university_list {
+  margin-top: 50px;
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  justify-content: center;
 }
